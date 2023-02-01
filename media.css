@@ -1,0 +1,80 @@
+/* 1400px и больше(desktop) - extra extra large
+1200px и больше(desktop) - extra large
+992px и больше(desktop и tablet) - large
+768px и больше(tablet) - medium
+576px и больше(mobiles) - small
+576px и меньше(mobiles) - extra small */
+
+@media screen and (min-width:1400px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media screen and (max-width:1200px) {}
+
+@media screen and (max-width:996px) {}
+
+@media screen and (max-width:768px) {
+    .col-3 {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .header__nav ul {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    #cover {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 60%;
+    }
+
+    .cover__wrap p {
+        font-size: 18px;
+    }
+
+    .cover__wrap button {
+        font-size: 18px;
+    }
+
+    .col-3 {
+        width: 100%;
+    }
+
+    .col-4 {
+        width: 100%;
+    }
+
+    .footer__nav {
+        flex-wrap: wrap;
+        text-align: center;
+        row-gap: 30px;
+    }
+
+    .footer__nav h2 {
+        width: 100%;
+        font-size: 40px;
+    }
+
+    .footer__nav h2:last-child {
+        width: 100%;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    h1 {
+        font-size: 38px;
+    }
+}

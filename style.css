@@ -1,0 +1,162 @@
+/* main */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+section {
+    padding: 100px 0;
+    border-bottom: 2px solid black;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    margin: 0 -15px;
+}
+
+.col-3 {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.col-4 {
+    width: 33.3333%;
+    padding: 0 15px;
+}
+
+/* main */
+
+/* header */
+header {
+    position: fixed;
+    width: 100%;
+    padding: 15px 0;
+    background: gray;
+    z-index: 1;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav img {
+    width: 50px;
+    height: 50px;
+}
+
+.header__nav ul {
+    display: flex;
+    column-gap: 20px;
+    font-size: 25px
+}
+
+.header__nav ul a {
+    color: white;
+    text-transform: capitalize;
+    transition: 0.5s;
+}
+
+.header__nav ul a:hover {
+    color: coral;
+
+}
+
+.burger {
+    display: none;
+}
+
+
+/* header */
+
+
+/* cover */
+#cover {
+    background-image: url('https://wallpaperaccess.com/full/3692584.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cover__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.cover__wrap {
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+.cover__wrap p {
+    font-size: 30px;
+}
+
+.cover__wrap button {
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: 3px solid coral;
+    background-color: white;
+    transition: 0.5s;
+    cursor: pointer;
+    color: coral;
+    text-transform: uppercase;
+    font-size: 25px
+}
+
+.cover__wrap button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* cover */
+
+
+#pokemons {
+    padding: 100px 0;
+}
+
+.pokemons__box img {
+    width: 100%;
+}
+
+
+footer {
+    padding: 50px 0;
+    background-color: black;
+    color: white;
+}
+
+.footer__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
